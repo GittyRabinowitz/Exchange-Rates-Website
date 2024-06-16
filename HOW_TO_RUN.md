@@ -21,6 +21,10 @@ This project requires Python and several Python packages to be installed. Follow
     cd Exchange-Rates-Website
     ```
 
+### Option 1: Run Locally
+
+#### Server Setup
+
 3. Navigate to the server directory:
 
     ```bash
@@ -65,6 +69,8 @@ This project requires Python and several Python packages to be installed. Follow
     pip install -r requirements.txt
     ```
 
+#### Client Setup
+
 8. Navigate to the client directory:
 
     ```bash
@@ -77,7 +83,7 @@ This project requires Python and several Python packages to be installed. Follow
     npm install
     ```
 
-## Running the Project
+## Running the Project Locally
 
 1. Start the FastAPI server:
 
@@ -94,6 +100,30 @@ This project requires Python and several Python packages to be installed. Follow
     cd ../client
     npm run dev
     ```
+
+### Option 2: Run with Docker
+
+#### Docker Setup
+
+1. Clone this repository to your local machine (if not already done):
+
+    ```bash
+    git clone https://github.com/GittyRabinowitz/Exchange-Rates-Website.git
+    ```
+
+2. Navigate to the project directory:
+
+    ```bash
+    cd Exchange-Rates-Website
+    ```
+
+3. Run the Docker Compose command:
+
+    ```bash
+    docker-compose up --build
+    ```
+
+    This will build and start both the server and client services defined in the `docker-compose.yml` file.
 
 ## Additional Notes
 
